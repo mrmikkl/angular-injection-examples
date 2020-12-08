@@ -1,10 +1,10 @@
 import { ElementRef, Injectable } from '@angular/core';
-import { Person } from './person.interface';
+import { PersonService } from './person.interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class BerndService implements Person {
+export class PersonWithOwnMethodService implements PersonService {
 
   constructor() {
     console.log('constr BerndService');

@@ -9,6 +9,8 @@ import { EasyInjectionComponent } from './components/easy-injection/easy-injecti
 import { EasyInjectionWithProviderComponent } from './components/easy-injection-with-provider/easy-injection-with-provider.component';
 import { InjectionWithExchangingServiceImplComponent } from './components/injection-with-exchanging-service-impl/injection-with-exchanging-service-impl.component';
 import { InjectionViaFactoryComponent } from './components/injection-via-factory/injection-via-factory.component';
+import { InjectionOfInterfaceViaInjectionTokenComponent } from './components/injection-of-interface-via-injection-token/injection-of-interface-via-injection-token.component';
+import { InjectionWithUseValueComponent } from './components/injection-with-use-value/injection-with-use-value.component';
 
 export const INJECTION_TOKEN = new InjectionToken<PersonService>('app.person');
 
@@ -18,7 +20,9 @@ export const INJECTION_TOKEN = new InjectionToken<PersonService>('app.person');
     EasyInjectionComponent,
     EasyInjectionWithProviderComponent,
     InjectionWithExchangingServiceImplComponent,
-    InjectionViaFactoryComponent
+    InjectionViaFactoryComponent,
+    InjectionOfInterfaceViaInjectionTokenComponent,
+    InjectionWithUseValueComponent
   ],
   imports:      [
     BrowserModule,
